@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = express();
 
+
 app.use((req,res,next) => {
     console.log('in the Middleware');
     next(); //allow the request to countion to the next middleware in line
@@ -26,7 +27,6 @@ app.listen(3000);
 // });
 
 // server.listen(port);
-    
 
 
 
