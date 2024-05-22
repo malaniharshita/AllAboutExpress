@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="saveExpenses(event)">
+        Amount: <input type = "text" name="amount" id = "amount">
+        Description: <input type = "text" name = "des" id = "des">
+        Choose category: <select id = "cat" name="cat" class="cate">
+            <option value = "movie" class="cat">movie</option>
+            <option value = "fuel" class="cat">fuel</option>
+            <option value = "food" class="cat">food</option>
+            <option value = "electricity" class="cat">electricity</option>
+        </select>
+        <button type = "submit">Add</button>
+    </form>
+    <ul id = "items">
+        
+    </ul>
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js">
+</script>
+<script src = "index.js">
+    
+</script>
+</body>
+</html>
